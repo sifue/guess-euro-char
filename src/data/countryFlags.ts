@@ -1,0 +1,31 @@
+import { CountryFlag } from '../types'
+
+export const countryFlags: CountryFlag[] = [
+  { language: 'スペイン語', countryCode: 'es', countryName: 'スペイン' },
+  { language: 'ポルトガル語', countryCode: 'pt', countryName: 'ポルトガル' },
+  { language: 'フランス語', countryCode: 'fr', countryName: 'フランス' },
+  { language: 'トルコ語', countryCode: 'tr', countryName: 'トルコ' },
+  { language: 'アルバニア語', countryCode: 'al', countryName: 'アルバニア' },
+  { language: 'エストニア語', countryCode: 'ee', countryName: 'エストニア' },
+  { language: 'デンマーク語', countryCode: 'dk', countryName: 'デンマーク' },
+  { language: 'ノルウェー語', countryCode: 'no', countryName: 'ノルウェー' },
+  { language: 'アイスランド語', countryCode: 'is', countryName: 'アイスランド' },
+  { language: 'スウェーデン語', countryCode: 'se', countryName: 'スウェーデン' },
+  { language: 'フィンランド語', countryCode: 'fi', countryName: 'フィンランド' },
+  { language: 'ドイツ語', countryCode: 'de', countryName: 'ドイツ' },
+  { language: 'ポーランド語', countryCode: 'pl', countryName: 'ポーランド' },
+  { language: 'ハンガリー語', countryCode: 'hu', countryName: 'ハンガリー' },
+  { language: 'ルーマニア語', countryCode: 'ro', countryName: 'ルーマニア' },
+  { language: 'ロシア語', countryCode: 'ru', countryName: 'ロシア' },
+  { language: 'ベラルーシ語', countryCode: 'by', countryName: 'ベラルーシ' },
+  { language: 'ウクライナ語', countryCode: 'ua', countryName: 'ウクライナ' },
+  { language: 'セルビア語', countryCode: 'rs', countryName: 'セルビア' },
+  { language: '北マケドニア語', countryCode: 'mk', countryName: '北マケドニア' },
+  { language: 'リトアニア語', countryCode: 'lt', countryName: 'リトアニア' },
+  { language: 'ラトビア語', countryCode: 'lv', countryName: 'ラトビア' },
+  { language: 'チェコ語', countryCode: 'cz', countryName: 'チェコ' },
+  { language: 'スロベニア語', countryCode: 'si', countryName: 'スロベニア' },
+  { language: 'クロアチア語', countryCode: 'hr', countryName: 'クロアチア' },
+  { language: 'ボスニア語', countryCode: 'ba', countryName: 'ボスニア・ヘルツェゴビナ' },
+  { language: 'アゼルバイジャン語', countryCode: 'az', countryName: 'アゼルバイジャン' }
+]
