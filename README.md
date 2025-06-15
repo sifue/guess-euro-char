@@ -111,13 +111,29 @@ npm run build
 ```
 
 4. Cloudflare Workersにデプロイ
+
+**開発環境へのデプロイ:**
 ```bash
 npm run deploy
 ```
 
-または直接wranglerコマンドを使用：
+**プロダクション環境へのデプロイ:**
 ```bash
+npm run deploy:production
+```
+
+または直接wranglerコマンド：
+```bash
+npx wrangler pages deploy dist --env production
+```
+
+**直接wranglerコマンドを使用する場合:**
+```bash
+# 開発環境
 npx wrangler pages deploy dist
+
+# プロダクション環境（productionブランチ）
+npx wrangler pages deploy dist --env production
 ```
 
 ### 設定のカスタマイズ
