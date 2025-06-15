@@ -15,7 +15,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "deploy": "wrangler pages deploy dist",
-    "deploy:production": "wrangler pages deploy dist --env production"
+    "deploy:production": "wrangler pages deploy dist --branch production"
   },
   "dependencies": {
     "react": "^18.2.0",

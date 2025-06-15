@@ -124,7 +124,7 @@ npm run deploy:production
 
 または直接wranglerコマンド：
 ```bash
-npx wrangler pages deploy dist --env production
+npx wrangler pages deploy dist --branch production
 ```
 
 **直接wranglerコマンドを使用する場合:**
@@ -133,7 +133,7 @@ npx wrangler pages deploy dist --env production
 npx wrangler pages deploy dist
 
 # プロダクション環境（productionブランチ）
-npx wrangler pages deploy dist --env production
+npx wrangler pages deploy dist --branch production
 ```
 
 ### 設定のカスタマイズ
