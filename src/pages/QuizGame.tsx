@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
 import { QuizQuestion, GameResult, QuestionResult } from '../types'
 import { generateQuizQuestions, formatTime } from '../utils/quizUtils'
+import { charactersData } from '../data/charactersData'
+import FlagIcon from '../components/FlagIcon'
 
 interface QuizGameProps {
   onGameComplete: (result: GameResult) => void
@@ -160,6 +162,40 @@ const QuizGame = ({ onGameComplete, onBackToMenu }: QuizGameProps) => {
               <div className="text-sm text-gray-600 mb-4">
                 {currentQuestion.description}
               </div>
+              
+              {/* 使用言語の表示 */}
+              {(() => {
+                const charData = charactersData.find(c => c.character === currentQuestion.character)
+                if (charData && charData.languages.length > 0) {
+                  return (
+                    <div className="mb-4 p-3 bg-white rounded-lg border">
+                      <div className="text-sm font-semibold text-gray-700 mb-2">
+                        この文字が使われる言語:
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {charData.languages.map((language, index) => (
+                          <span
+                            key={index}
+                            className={`px-3 py-1 rounded-full text-sm font-medium flex items-center gap-2 ${
+                              language === currentQuestion.correctAnswer
+                                ? 'bg-green-100 text-green-800 border border-green-300'
+                                : 'bg-blue-100 text-blue-800'
+                            }`}
+                          >
+                            <FlagIcon language={language} size="sm" />
+                            {language}
+                            {language === currentQuestion.correctAnswer && (
+                              <span className="text-green-600">✓</span>
+                            )}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )
+                }
+                return null
+              })()}
+              
               <button
                 onClick={handleNext}
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition-colors duration-200"
