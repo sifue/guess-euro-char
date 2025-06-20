@@ -17,7 +17,6 @@ export const countryFlags: CountryFlag[] = [
   { language: 'ハンガリー語', countryCode: 'hu', countryName: 'ハンガリー' },
   { language: 'ルーマニア語', countryCode: 'ro', countryName: 'ルーマニア' },
   { language: 'ロシア語', countryCode: 'ru', countryName: 'ロシア' },
-  { language: 'ベラルーシ語', countryCode: 'by', countryName: 'ベラルーシ' },
   { language: 'ウクライナ語', countryCode: 'ua', countryName: 'ウクライナ' },
   { language: 'セルビア語', countryCode: 'rs', countryName: 'セルビア' },
   { language: '北マケドニア語', countryCode: 'mk', countryName: '北マケドニア' },

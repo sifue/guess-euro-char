@@ -4,7 +4,7 @@ export const charactersData: CharacterData[] = [
   {
     character: 'Ñ / ñ',
     languages: ['スペイン語'],
-    description: 'チルダ付き N（エニェ）。「ニャ」に近い独占文字。'
+    description: 'スペイン語独占文字。地名や看板に1つでもあればスペイン確定。GeoGuessrでは最も信頼できる判別文字の一つ。'
   },
   {
     character: 'Ç / ç',
@@ -14,12 +14,12 @@ export const charactersData: CharacterData[] = [
   {
     character: 'Ã / ã',
     languages: ['ポルトガル語'],
-    description: 'チルダ付き A。鼻母音。「ã＋õ」セットでポルトガル語圏確定。'
+    description: 'ポルトガル語独占文字。地名や看板に1つでもあればポルトガル確定。õと組み合わせで見つけることが多い。'
   },
   {
     character: 'Õ / õ',
     languages: ['ポルトガル語', 'エストニア語'],
-    description: 'ポルトガル語では鼻母音の O。北欧で Õ が Ä/Ö/Ü と並ぶとエストニア。'
+    description: '南欧にあればポルトガル、北欧・バルト海沿岸にあればエストニア。地理的位置で簡単に判別可能。'
   },
   {
     character: 'Â / â',
@@ -69,22 +69,22 @@ export const charactersData: CharacterData[] = [
   {
     character: 'Ł / ł',
     languages: ['ポーランド語'],
-    description: 'ストローク付き L。英語の w 音。ポーランド独占文字。'
+    description: 'ポーランド語独占文字。地名や看板に1つでもあればポーランド確定。GeoGuessrで最も信頼できる判別文字の一つ。'
   },
   {
     character: 'Ő / ő',
     languages: ['ハンガリー語'],
-    description: 'ダブルアキュート付き O。長い前舌の「オ」。ハンガリー確定級。'
+    description: 'ハンガリー語独占文字。地名や看板に1つでもあればハンガリー確定。ダブルアキュート記号が特徴的。'
   },
   {
     character: 'Ű / ű',
     languages: ['ハンガリー語'],
-    description: 'ダブルアキュート付き U。長い前舌の「ウ」。ハンガリー確定級。'
+    description: 'ハンガリー語独占文字。地名や看板に1つでもあればハンガリー確定。ダブルアキュート記号が特徴的。'
   },
   {
     character: 'Ș / ș',
     languages: ['ルーマニア語'],
-    description: '下コンマ付き S。sh 音。Ț とセットでルーマニア／モルドバ。'
+    description: '下コンマ付き S。sh 音。Ț とセットでルーマニア圏。'
   },
   {
     character: 'Ț / ț',
@@ -93,7 +93,7 @@ export const charactersData: CharacterData[] = [
   },
   {
     character: 'Ы / ы',
-    languages: ['ロシア語', 'ベラルーシ語'],
+    languages: ['ロシア語'],
     description: '「ウィ」に近い母音。ウクライナ語には無いのでロシア確定級。'
   },
   {
@@ -117,19 +117,14 @@ export const charactersData: CharacterData[] = [
     description: '前舌の「ウ」。Ө とセットで中央アジア・モンゴル。'
   },
   {
-    character: 'Ў / ў',
-    languages: ['ベラルーシ語'],
-    description: 'ベラルーシ独占文字。Ы と並びやすい。'
-  },
-  {
     character: 'Ą / ą',
     languages: ['リトアニア語'],
-    description: '鼻母音 A。ė と共存でリトアニア確定。'
+    description: 'リトアニア語独占文字。地名や看板に1つでもあればリトアニア確定。他のオゴネク文字（ę, ų）と組み合わせて現れる。'
   },
   {
     character: 'Ę / ę',
     languages: ['リトアニア語'],
-    description: '鼻母音 E。ポーランドにもあるが Ł が無い場合は LT。'
+    description: 'リトアニア語独占文字。地名や看板に1つでもあればリトアニア確定。他のオゴネク文字（ą, ų）と組み合わせて現れる。'
   },
   {
     character: 'Ū / ū',
@@ -144,12 +139,12 @@ export const charactersData: CharacterData[] = [
   {
     character: 'Ė / ė',
     languages: ['リトアニア語'],
-    description: '点付き E。リトアニア独占文字。'
+    description: 'リトアニア語独占文字。地名や看板に1つでもあればリトアニア確定。オゴネク文字（ą, ę, ų）と組み合わせて現れる。'
   },
   {
     character: 'Ā / ā',
     languages: ['ラトビア語'],
-    description: '長母音 A。ū ī ā セットでラトビア確定。'
+    description: 'ラトビア語独占文字。地名や看板に1つでもあればラトビア確定。他の長母音（ū, ī）と組み合わせて現れる。'
   },
   {
     character: 'Č / č',
@@ -158,28 +153,28 @@ export const charactersData: CharacterData[] = [
   },
   {
     character: 'Š / š',
-    languages: ['リトアニア語', 'ラトビア語', 'エストニア語', 'スラブ諸語'],
+    languages: ['リトアニア語', 'ラトビア語', 'エストニア語', 'チェコ語', 'スロベニア語', 'クロアチア語', 'セルビア語'],
     description: 'sh 音。バルト三国は連発する傾向。'
   },
   {
     character: 'Ž / ž',
-    languages: ['リトアニア語', 'ラトビア語', 'エストニア語', 'スラブ諸語'],
+    languages: ['リトアニア語', 'ラトビア語', 'エストニア語', 'チェコ語', 'スロベニア語', 'クロアチア語', 'セルビア語'],
     description: 'zh 音。ė/ā/õ との組み合わせで国特定。'
   },
   {
     character: 'Ř / ř',
     languages: ['チェコ語'],
-    description: 'ハーチェク付き R。チェコ語独占文字。看板に 1 つでもあればチェコ確定。'
+    description: 'チェコ語独占文字。地名や看板に1つでもあればチェコ確定。GeoGuessrで最も信頼できる判別文字の一つ。'
   },
   {
     character: 'Þ / þ',
     languages: ['アイスランド語'],
-    description: '無声歯摩擦音。「th」。Þ と Ð が共存 → アイスランド確定。'
+    description: 'アイスランド語独占文字。地名や看板に1つでもあればアイスランド確定。Ðと組み合わせで見つけることが多い。'
   },
   {
     character: 'Ð / ð',
     languages: ['アイスランド語'],
-    description: '有声歯摩擦音。「dh」。Þ と並ぶのはアイスランドのみ。'
+    description: 'アイスランド語独占文字。地名や看板に1つでもあればアイスランド確定。Þと組み合わせで見つけることが多い。'
   },
   {
     character: 'Ë / ë',
@@ -189,7 +184,7 @@ export const charactersData: CharacterData[] = [
   {
     character: 'Ů / ů',
     languages: ['チェコ語'],
-    description: 'リング付き U。長母音「ウー」。チェコ語独占文字。'
+    description: 'チェコ語独占文字。地名や看板に1つでもあればチェコ確定。Řと並んでチェコ特定の決め手となる。'
   },
   {
     character: 'Đ / đ',
@@ -204,7 +199,7 @@ export const charactersData: CharacterData[] = [
   {
     character: 'Ų / ų',
     languages: ['リトアニア語'],
-    description: 'オゴネク付き U（鼻化の名残）。ė, ą などと併存でリトアニア確実。'
+    description: 'リトアニア語独占文字。地名や看板に1つでもあればリトアニア確定。他のオゴネク文字（ą, ę）と組み合わせて現れる。'
   },
   {
     character: 'İ / ı',
@@ -214,6 +209,6 @@ export const charactersData: CharacterData[] = [
   {
     character: 'ẞ / ß',
     languages: ['ドイツ語'],
-    description: 'エスツェット。ドイツ語専用の強力ヒント。'
+    description: 'ドイツ語独占文字。地名や看板に1つでもあればドイツ確定。GeoGuessrで最も信頼できる判別文字の一つ。'
   }
 ]

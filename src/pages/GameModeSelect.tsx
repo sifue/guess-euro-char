@@ -15,10 +15,18 @@ const GameModeSelect = ({ onSelectMode }: GameModeSelectProps) => {
           <p className="text-gray-600 mb-3">
             GeoGuessr向けの文字判定練習
           </p>
-          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 text-sm text-gray-700">
-            <div className="font-semibold text-yellow-800 mb-1">前提条件</div>
-            <div className="text-xs">
-              英語のアルファベット、ギリシャ文字、キリル文字は既に判別できることを前提としています
+          <div className="space-y-3">
+            <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 text-sm text-gray-700">
+              <div className="font-semibold text-yellow-800 mb-1">前提条件</div>
+              <div className="text-xs">
+                英語のアルファベット、ギリシャ文字、キリル文字は既に判別できることを前提としています
+              </div>
+            </div>
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 text-sm text-gray-700">
+              <div className="font-semibold text-blue-800 mb-1">対象国の制限</div>
+              <div className="text-xs">
+                GeoGuessrでプレイ可能な国のみを対象としています（ベラルーシ、モルドバ、コソボは除外）
+              </div>
             </div>
           </div>
         </div>
