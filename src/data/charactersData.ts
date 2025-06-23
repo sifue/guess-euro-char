@@ -97,24 +97,24 @@ export const charactersData: CharacterData[] = [
     description: '「ウィ」に近い母音。ウクライナ語には無いのでロシア確定級。'
   },
   {
-    character: 'І / і',
+    character: 'І / і（キリル文字）',
     languages: ['ウクライナ語'],
-    description: '「イ」母音。ロシア語に無い独占文字でウクライナ確定。'
+    description: '「イ」母音。キリル文字圏でロシア語に無い独占文字でウクライナ確定。※ラテン文字圏では通常のIと区別困難。'
   },
   {
-    character: 'Ј / ј',
+    character: 'Ј / ј（キリル文字）',
     languages: ['セルビア語', '北マケドニア語'],
-    description: '英語 y 音。セルビア／MK 確定の決め手。'
+    description: '英語 y 音。キリル文字圏でセルビア／MK 確定の決め手。※ラテン文字圏では通常のJと区別困難。'
   },
   {
-    character: 'Ө / ө',
+    character: 'Ө / ө（キリル文字）',
     languages: ['キルギス語', 'カザフ語', 'モンゴル語'],
-    description: '円唇中舌母音。「オ」と「エ」の中間。Θ に似るが別字。'
+    description: '円唇中舌母音。「オ」と「エ」の中間。キリル文字圏で中央アジア・モンゴル系を示す。※ギリシャ文字Θとは別字。'
   },
   {
-    character: 'Ү / ү',
+    character: 'Ү / ү（キリル文字）',
     languages: ['モンゴル語', 'カザフ語'],
-    description: '前舌の「ウ」。Ө とセットで中央アジア・モンゴル。'
+    description: '前舌の「ウ」。キリル文字圏でӨとセットで中央アジア・モンゴル系を示す。※ラテン文字Yとは別字。'
   },
   {
     character: 'Ą / ą',
@@ -177,9 +177,9 @@ export const charactersData: CharacterData[] = [
     description: 'アイスランド語独占文字。地名や看板に1つでもあればアイスランド確定。Þと組み合わせで見つけることが多い。'
   },
   {
-    character: 'Ë / ë',
+    character: 'Ë / ë（ラテン文字）',
     languages: ['アルバニア語'],
-    description: '分音記号付き E。ë と ç が多発すればアルバニア。'
+    description: 'アルバニア語独占文字。キリル文字圏でない場所で見つけたら確実にアルバニア。山間部の看板や地名で頻出。※キリル文字圏では普通のロシア語等に出現するため注意。'
   },
   {
     character: 'Ů / ů',
