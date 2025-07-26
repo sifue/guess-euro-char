@@ -92,9 +92,14 @@ export const charactersData: CharacterData[] = [
     description: '下コンマ付き T。ts 音。Ș と並ぶとルーマニア圏。'
   },
   {
+    character: 'Ă / ă',
+    languages: ['ルーマニア語'],
+    description: 'ヨーロッパのラテン文字圏でĂがあればルーマニア濃厚。Ș/Țと組み合わせで確度UP。※ベトナム語にもあるが声調記号や景観で区別可能。'
+  },
+  {
     character: 'Ы / ы',
-    languages: ['ロシア語'],
-    description: '「ウィ」に近い母音。ウクライナ語には無いのでロシア確定級。'
+    languages: ['ロシア語', 'キルギス語', 'カザフ語', 'モンゴル語'],
+    description: '「ウィ」に近い母音。ウクライナ語には無いため、キリル文字圏で東欧以外（ロシア・中央アジア）を示す重要文字。'
   },
   {
     character: 'І / і（キリル文字）',

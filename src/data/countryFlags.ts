@@ -26,5 +26,8 @@ export const countryFlags: CountryFlag[] = [
   { language: 'スロベニア語', countryCode: 'si', countryName: 'スロベニア' },
   { language: 'クロアチア語', countryCode: 'hr', countryName: 'クロアチア' },
   { language: 'ボスニア語', countryCode: 'ba', countryName: 'ボスニア・ヘルツェゴビナ' },
-  { language: 'アゼルバイジャン語', countryCode: 'az', countryName: 'アゼルバイジャン' }
+  { language: 'アゼルバイジャン語', countryCode: 'az', countryName: 'アゼルバイジャン' },
+  { language: 'キルギス語', countryCode: 'kg', countryName: 'キルギス' },
+  { language: 'カザフ語', countryCode: 'kz', countryName: 'カザフスタン' },
+  { language: 'モンゴル語', countryCode: 'mn', countryName: 'モンゴル' }
 ]
